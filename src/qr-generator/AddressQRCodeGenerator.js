@@ -88,13 +88,7 @@ const AddressQRCodeGenerator = () => {
         {/* Display QR Code */}
         {generatedQR && <QRCode value={generatedQR} />}
 
-        {/* Display API result (for testing purposes) */}
-        {apiResult && (
-          <div>
-            <h3>API Result:</h3>
-            <pre>{JSON.stringify(apiResult, null, 2)}</pre>
-          </div>
-        )}
+        
       </div>
     </div>
   );
