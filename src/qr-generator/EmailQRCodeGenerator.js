@@ -32,7 +32,7 @@ const QRCodeGenerator = () => {
   };
 
   return (
-    <div style={{ maxWidth: '400px', margin: 'auto', textAlign: 'center' }}>
+    <div style={{  textAlign: 'center' }}>
       <h2>QR Code Generator</h2>
 
       <label htmlFor="emailInput" style={{ display: 'block', marginBottom: '8px' }}>

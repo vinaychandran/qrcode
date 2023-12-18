@@ -52,30 +52,36 @@ const AddressQRCodeGenerator = () => {
   };
 
   return (
-    <div style={{ maxWidth: '400px', margin: 'auto', textAlign: 'center' }}>
+    <div style={{ textAlign: 'center' }}>
       <h2>Address QR Code Generator</h2>
 
-      <label htmlFor="postalCodeInput" style={{ display: 'block', marginBottom: '8px' }}>
-        Postal Code:
-      </label>
-      <input
-        type="text"
-        id="postalCodeInput"
-        value={postalCode}
-        onChange={(e) => setPostalCode(e.target.value)}
-        style={{ width: '100%', padding: '8px', marginBottom: '16px' }}
-      />
+      <div style={{display:'flex', justifyContent: 'space-between'}}>
+        <div>
 
-      <label htmlFor="doorAndStreetInput" style={{ display: 'block', marginBottom: '8px' }}>
-        Door and Street:
-      </label>
-      <input
-        type="text"
-        id="doorAndStreetInput"
-        value={doorAndStreet}
-        onChange={(e) => setDoorAndStreet(e.target.value)}
-        style={{ width: '100%', padding: '8px', marginBottom: '16px' }}
-      />
+            <label htmlFor="postalCodeInput" style={{ display: 'block', marginBottom: '8px' }}>
+                Postal Code:
+            </label>
+            <input
+                type="text"
+                id="postalCodeInput"
+                value={postalCode}
+                onChange={(e) => setPostalCode(e.target.value)}
+                style={{padding: '8px', margin: '0 10px 16px' }}
+            />
+        </div>
+        <div>
+        <label htmlFor="doorAndStreetInput" style={{ display: 'block', marginBottom: '8px' }}>
+            Door and Street:
+        </label>
+        <input
+            type="text"
+            id="doorAndStreetInput"
+            value={doorAndStreet}
+            onChange={(e) => setDoorAndStreet(e.target.value)}
+            style={{  padding: '8px', margin: '0 10px 16px'}}
+        />
+        </div>
+        </div>
 
       <button
         onClick={generateQRCode}
@@ -85,10 +91,18 @@ const AddressQRCodeGenerator = () => {
       </button>
 
       <div style={{ marginTop: '16px' }}>
+        
+
+        {/* Display API result (for testing purposes) */}
+        {apiResult && (
+          <div>
+            <h3>Address:</h3>
+            <pre>{  `Postal Code: ${postalCode}\nAddress: ${apiResult[0].pref}  ${apiResult[0].city} ${apiResult[0].town} ${doorAndStreet}`}</pre>
+          </div>
+        )}
+
         {/* Display QR Code */}
         {generatedQR && <QRCode value={generatedQR} />}
-
-        
       </div>
     </div>
   );
