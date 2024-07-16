@@ -1,0 +1,106 @@
+.formGenerator{
+    background-color: #fff;
+    max-width: 500px;
+    padding: 50px;
+    border-radius: 25px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+input{
+    line-height: 1.5;
+    font-size: 1rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+    cursor: default;
+    outline: none;
+    padding: 8px 52px 8px 10px;
+    transition: all 200ms ease;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.button{
+    display: block;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 0 12px;
+    font-size: 15px;
+    line-height: 58px;
+    border-radius: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background: #ffd25d;
+
+    height: 60px;
+    font-weight: 700;;
+}
+
+.clear{
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+    background: none;
+}
+
+.qrCodeDisaply{
+    max-width: 256px;
+    margin: 40px auto;
+
+}
+
+
+h3{
+    margin: 0;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: 700;
+    background:#222d4b;
+}
+
+.printButton{
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 10px 30px;
+    font-size: 15px;
+    border-radius: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background: #ffd25d;
+    margin-bottom:20px;
+    font-weight: 700;;
+}

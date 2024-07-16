@@ -102,7 +102,7 @@ const AddressQRCodeGenerator = () => {
         )}
 
         {/* Display QR Code */}
-        {generatedQR && <QRCode value={generatedQR} />}
+        {generatedQR && <QRCode value={generatedQR}  />}
       </div>
     </div>
   );

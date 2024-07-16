@@ -1,8 +1,18 @@
-.app {
-  text-align: center;
+header{
+  background-color: #FFF;
+  height: 100px;
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  padding:0 20px;
+  justify-content: space-between;
+  color: #1A1A1A;
 }
+
+section{
+  padding: 50px 20px;
+}
+
+
 
 
 @media only screen and (max-width: 600px) {
@@ -15,3 +25,4 @@
     margin-bottom: 100px;
   }
 }
+
