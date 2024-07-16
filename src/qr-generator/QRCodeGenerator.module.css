@@ -7,6 +7,12 @@
     text-align: center;
 }
 
+@media only screen and (max-width: 600px) {
+    .formGenerator {
+        padding: 30px;
+    }
+}
+
 
 input{
     line-height: 1.5;
@@ -104,3 +110,5 @@ h3{
     margin-bottom:20px;
     font-weight: 700;;
 }
+
+
